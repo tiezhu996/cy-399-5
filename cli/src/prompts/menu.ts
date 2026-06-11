@@ -6,6 +6,7 @@ export async function chooseMainAction() {
       { name: '登录', value: 'login' },
       { name: '注册', value: 'register' },
       { name: '发布约拍档期', value: 'schedule' },
+      { name: '我的档期', value: 'my-schedule' },
       { name: '查看预约请求', value: 'booking' },
       { name: '订单管理', value: 'order' },
       { name: '收入统计', value: 'stats' },

@@ -13,6 +13,14 @@ export const photoApi = {
     const { data } = await apiClient().post('/api/schedules/batch', payload);
     return data;
   },
+  async listSchedules() {
+    const { data } = await apiClient().get('/api/schedules');
+    return data;
+  },
+  async deleteSchedule(id: number) {
+    const { data } = await apiClient().delete(`/api/schedules/${id}`);
+    return data;
+  },
   async listBookings() {
     const { data } = await apiClient().get('/api/bookings', { params: { status: 'pending' } });
     return data;
